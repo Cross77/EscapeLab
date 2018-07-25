@@ -17889,7 +17889,6 @@ GameObject:
   - component: {fileID: 610664675}
   - component: {fileID: 610664674}
   - component: {fileID: 610664673}
-  - component: {fileID: 610664679}
   m_Layer: 0
   m_Name: Lava
   m_TagString: Danger
@@ -18272,17 +18271,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &610664679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 610664672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cfe80ad29d6b234b911504ea50f7d01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &625017900
 GameObject:
   m_ObjectHideFlags: 0
@@ -21975,6 +21963,8 @@ GameObject:
   m_Component:
   - component: {fileID: 768390083}
   - component: {fileID: 768390082}
+  - component: {fileID: 768390085}
+  - component: {fileID: 768390084}
   m_Layer: 0
   m_Name: Area Light (1)
   m_TagString: Untagged
@@ -22031,6 +22021,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &768390084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 768390081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cfe80ad29d6b234b911504ea50f7d01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &768390085
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 768390081}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 33, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!43 &770136146
 Mesh:
   m_ObjectHideFlags: 0
@@ -37978,7 +37991,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_JumpSpeed
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8200000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: MinDistance
@@ -42024,6 +42037,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1441581513}
   - component: {fileID: 1441581512}
+  - component: {fileID: 1441581515}
+  - component: {fileID: 1441581514}
   m_Layer: 0
   m_Name: Area Light
   m_TagString: Untagged
@@ -42080,6 +42095,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!65 &1441581514
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1441581511}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 29, y: 13, z: 0.1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1441581515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1441581511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cfe80ad29d6b234b911504ea50f7d01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1450954725
 GameObject:
   m_ObjectHideFlags: 0
@@ -53805,7 +53843,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh5732
+  m_Name: pb_Mesh5734
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
